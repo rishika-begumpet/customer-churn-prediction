@@ -404,24 +404,27 @@ if predict_button:
 
 
 #================================================================================================================
+st.divider()
 
 
 
 
-
-        st.markdown(
-    '<div class="section-title">Customer Churn Distribution</div>',
+    
+st.markdown(
+    '<div class="section-title  style="font-size: 28px; font-weight: bold">Customer churn Distribution</div>',
     unsafe_allow_html=True
 )
 
-st.image("images/diffrence.png",width=800)
+col1, col2, col3 = st.columns([1, 2, 1])
+
+with col2:
+    st.image("images/diffrence.png",use_container_width=True)
 
 
 st.markdown(
-    '<div class="section-title">Top Importance Features</div>',
+    '<div class="section-title" style="font-size: 28px; font-weight: bold;">Top Importance Features</div>',
     unsafe_allow_html=True
 )
 
-st.image("images/topfeatures.png",use_container_width=True)
-
+st.image("images/topfeatures.png",use_container_width = True)
 
