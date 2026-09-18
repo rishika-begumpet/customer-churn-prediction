@@ -4,6 +4,7 @@ import joblib
 import plotly.express as px
 
 
+
 # =========================================================
 # PAGE CONFIGURATION
 # =========================================================
@@ -400,4 +401,26 @@ if predict_button:
         st.error("⚠️ Customer Will Churn")
     else:
         st.success("✅ Customer Will Stay")
-        
+
+
+#================================================================================================================
+
+
+
+
+
+        st.markdown(
+    '<div class="section-title">Customer Churn Distribution</div>',
+    unsafe_allow_html=True
+)
+
+st.image("images/diffrence.png",width=800)
+
+
+st.markdown(
+    '<div class="section-title">Top Importance Features</div>',
+    unsafe_allow_html=True
+)
+
+st.image("images/topfeatures.png",use_container_width=True)
+
